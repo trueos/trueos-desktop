@@ -61,17 +61,11 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		libaacs>=0:multimedia/libaacs \
 		xbrightness>=0:x11/xbrightness \
 		x11vnc>=0:net/x11vnc \
-		ataidle>=0:sysutils/ataidle \
-		tk84>=0:x11-toolkits/tk84 \
-		tk85>=0:x11-toolkits/tk85 \
-		tk86>=0:x11-toolkits/tk86 \
 		pulseaudio>=0:audio/pulseaudio \
 		paprefs>=0:audio/paprefs \
 		pavucontrol>=0:audio/pavucontrol \
 		disktype>=0:sysutils/disktype \
-		openntpd>=0:net/openntpd \
-		socat>=0:net/socat \
-		tor>=0:security/tor
+		openntpd>=0:net/openntpd
 
 CONFLICTS=      pcbsd-utils*
 
