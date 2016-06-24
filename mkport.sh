@@ -6,6 +6,24 @@
 port="misc/trueos-desktop"
 dfile="trueos-desktop"
 
+which jq 2>/dev/null >/dev/null
+if [ $? -ne 0 ] ; then
+  echo "Requires jq to be installed!"
+  exit 1
+fi
+
+
+GITHUB_ORGANIZATION_NAME="trueos";
+REPO_NAME="trueos-core";
+COMMIT_SHA=$( fetch -o - https://api.github.com/repos/${GITHUB_ORGANIZATION_NAME}/${REPO_NAME}/commits/master 2>/dev/null | jq '.sha' | sed 's/"//g');
+
+if [ -z "$COMMIT_SHA" ] ; then
+  echo "Failed to get sha of trueos-core commit"
+  exit 1
+fi
+
+ghtag="$COMMIT_SHA"
+
 massage_subdir() {
   cd "$1"
   if [ $? -ne 0 ] ; then
@@ -66,9 +84,6 @@ if [ -n "$OBJS" ] ; then
    echo $OBJS
    exit 1
 fi
-
-# Get the GIT tag
-ghtag=`git log -n 1 . | grep '^commit ' | awk '{print $2}'`
 
 # Get the version
 if [ -e "version" ] ; then
