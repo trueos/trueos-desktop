@@ -80,7 +80,7 @@ do-install:
 
 USE_GITHUB=     yes
 GH_ACCOUNT=     trueos
-GH_PROJECT=     pcdm
+GH_PROJECT=     trueos-desktop
 GH_TAGNAME=     %%GHTAG%%
 
 .include <bsd.port.mk>
