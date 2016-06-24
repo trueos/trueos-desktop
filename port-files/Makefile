@@ -14,7 +14,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		${LOCALBASE}/bin/Lumina-DE:/x11-lumina \
 		${LOCALBASE}/bin/pc-updatemanager:sysutils/pc-updatemanager \
 		${LOCALBASE}/sbin/pc-sysinstall:sysutils/pc-sysinstall \
-                ${LOCALBASE}/share/pcbsd/scripts/functions.sh:sysutils/trueos-libsh \
+                ${LOCALBASE}/share/trueos/scripts/functions.sh:sysutils/trueos-libsh \
 		${LOCALBASE}/bin/sysadm-binary:sysutils/sysadm \
 		${LOCALBASE}/bin/sysadm-client:sysutils/sysadm-client \
 		${LOCALBASE}/bin/lpreserver:sysutils/life-preserver \
@@ -72,6 +72,8 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		openntpd>=0:net/openntpd \
 		socat>=0:net/socat \
 		tor>=0:security/tor
+
+CONFLICTS=      pcbsd-utils*
 
 NO_BUILD=	yes
 
