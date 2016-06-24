@@ -67,12 +67,9 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		disktype>=0:sysutils/disktype \
 		openntpd>=0:net/openntpd
 
-CONFLICTS=      pcbsd-utils*
-
-NO_BUILD=	yes
-
-do-install:
-	${DO_NADA}
+CONFLICTS=      pcbsd-utils* trueos-server
+WRKSRC_SUBDIR=	xtrafiles
+MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
 
 USE_GITHUB=     yes
 GH_ACCOUNT=     trueos
