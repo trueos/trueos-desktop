@@ -12,7 +12,7 @@ COMMENT=	TrueOS Desktop
 
 RUN_DEPENDS=	${LOCALBASE}/bin/warden-to-iocage:misc/trueos-core \
 		${LOCALBASE}/sbin/PCDMd:x11/pcdm \
-		${LOCALBASE}/bin/Lumina-DE:/x11-lumina \
+		${LOCALBASE}/bin/Lumina-DE:/x11/lumina-i18n \
 		${LOCALBASE}/bin/pc-updatemanager:sysutils/pc-updatemanager \
 		${LOCALBASE}/sbin/pc-sysinstall:sysutils/pc-sysinstall \
                 ${LOCALBASE}/share/trueos/scripts/functions.sh:sysutils/trueos-libsh \
