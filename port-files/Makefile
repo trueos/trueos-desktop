@@ -67,6 +67,9 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		disktype>=0:sysutils/disktype \
 		openntpd>=0:net/openntpd
 
+WRKSRC_SUBDIR=  xtrafiles
+MAKE_ARGS=      PREFIX=${STAGEDIR}${PREFIX}
+
 CONFLICTS=      pcbsd-utils* trueos-server
 WRKSRC_SUBDIR=	xtrafiles
 MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
