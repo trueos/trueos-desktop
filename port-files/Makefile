@@ -11,7 +11,7 @@ MAINTAINER=	jmaloney@ixsystems.com
 COMMENT=	TrueOS Desktop
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
-		${LOCALBASE}/bin/Lumina-DE:/x11/lumina-i18n \
+		${LOCALBASE}/bin/Lumina-DE:x11/lumina-i18n \
 		${LOCALBASE}/bin/pc-updatemanager:sysutils/pc-updatemanager \
 		${LOCALBASE}/sbin/pc-sysinstall:sysutils/pc-sysinstall \
                 ${LOCALBASE}/share/trueos/scripts/functions.sh:sysutils/trueos-libsh \
