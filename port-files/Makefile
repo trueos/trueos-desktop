@@ -11,7 +11,6 @@ MAINTAINER=	jmaloney@ixsystems.com
 COMMENT=	TrueOS Desktop
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
-		${LOCALBASE}/bin/Lumina-DE:x11/lumina-i18n \
 		${LOCALBASE}/bin/pc-updatemanager:sysutils/pc-updatemanager \
 		${LOCALBASE}/sbin/pc-sysinstall:sysutils/pc-sysinstall \
                 ${LOCALBASE}/share/trueos/scripts/functions.sh:sysutils/trueos-libsh \
@@ -34,6 +33,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		${LOCALBASE}/bin/xvkbd:x11/xvkbd \
 		${LOCALBASE}/bin/unrar:archivers/unrar \
 		${LOCALBASE}/bin/7z:archivers/p7zip \
+		lumina-i18n>=0:x11/lumina-i18n \
 		xorg>=0:x11/xorg \
 		xf86-input-synaptics>=0:x11-drivers/xf86-input-synaptics \
 		xf86-video-intel>=0:x11-drivers/xf86-video-intel \
