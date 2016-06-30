@@ -17,6 +17,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		${LOCALBASE}/bin/sysadm-binary:sysutils/sysadm \
 		${LOCALBASE}/bin/sysadm-client:sysutils/sysadm-client \
 		${LOCALBASE}/bin/lpreserver:sysutils/life-preserver \
+		${LOCALBASE}/sbin/service:sysutils/openrc \
 		${LOCALBASE}/sbin/beadm:sysutils/beadm \
 		${LOCALBASE}/etc/rc.d/fail2ban:security/py-fail2ban \
 		${LOCALBASE}/bin/zip:archivers/zip \
@@ -65,7 +66,8 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		paprefs>=0:audio/paprefs \
 		pavucontrol>=0:audio/pavucontrol \
 		disktype>=0:sysutils/disktype \
-		openntpd>=0:net/openntpd
+		openntpd>=0:net/openntpd \
+		dhcpcd>=0:net/dhcpcd
 
 WRKSRC_SUBDIR=  xtrafiles
 MAKE_ARGS=      PREFIX=${STAGEDIR}${PREFIX}
