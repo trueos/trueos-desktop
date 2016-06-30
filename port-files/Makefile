@@ -14,6 +14,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		${LOCALBASE}/bin/pc-updatemanager:sysutils/pc-updatemanager \
 		${LOCALBASE}/sbin/pc-sysinstall:sysutils/pc-sysinstall \
                 ${LOCALBASE}/share/trueos/scripts/functions.sh:sysutils/trueos-libsh \
+                ${LOCALBASE}/bin/pc-firstboot:sysutils/trueos-utils-qt5 \
 		${LOCALBASE}/bin/sysadm-binary:sysutils/sysadm \
 		${LOCALBASE}/bin/sysadm-client:sysutils/sysadm-client \
 		${LOCALBASE}/bin/lpreserver:sysutils/life-preserver \
