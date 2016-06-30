@@ -69,7 +69,8 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		pavucontrol>=0:audio/pavucontrol \
 		disktype>=0:sysutils/disktype \
 		openntpd>=0:net/openntpd \
-		dhcpcd>=0:net/dhcpcd
+		dhcpcd>=0:net/dhcpcd \
+		xv>=0:graphics/xv
 
 WRKSRC_SUBDIR=  xtrafiles
 MAKE_ARGS=      PREFIX=${STAGEDIR}${PREFIX}
