@@ -19,6 +19,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		${LOCALBASE}/bin/sysadm-binary:sysutils/sysadm \
 		${LOCALBASE}/bin/sysadm-client:sysutils/sysadm-client \
 		${LOCALBASE}/bin/lpreserver:sysutils/life-preserver \
+		${LOCALBASE}/bin/personacrypt:sysutils/personacrypt \
 		${LOCALBASE}/sbin/service:sysutils/openrc \
 		${LOCALBASE}/sbin/beadm:sysutils/beadm \
 		${LOCALBASE}/etc/rc.d/fail2ban:security/py-fail2ban \
