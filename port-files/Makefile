@@ -70,6 +70,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		disktype>=0:sysutils/disktype \
 		openntpd>=0:net/openntpd \
 		dhcpcd>=0:net/dhcpcd \
+		git:devel/git \
 		xv>=0:graphics/xv
 
 WRKSRC_SUBDIR=  xtrafiles
