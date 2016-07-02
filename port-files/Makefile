@@ -18,6 +18,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
                 ${LOCALBASE}/share/trueos/scripts/functions.sh:sysutils/trueos-libsh \
                 ${LOCALBASE}/bin/pc-checkxdisplay:sysutils/trueos-utils \
                 ${LOCALBASE}/bin/pc-firstboot:sysutils/trueos-utils-qt5 \
+		${LOCALBASE}/bin/pc-mixer:audio/pc-mixer \
 		${LOCALBASE}/bin/sysadm-binary:sysutils/sysadm \
 		${LOCALBASE}/bin/sysadm-client:sysutils/sysadm-client \
 		${LOCALBASE}/bin/lpreserver:sysutils/life-preserver \
