@@ -23,7 +23,6 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		${LOCALBASE}/bin/sysadm-client:sysutils/sysadm-client \
 		${LOCALBASE}/bin/lpreserver:sysutils/life-preserver \
 		${LOCALBASE}/bin/personacrypt:sysutils/personacrypt \
-		${LOCALBASE}/sbin/service:sysutils/openrc \
 		${LOCALBASE}/bin/qterminal:x11/qterminal \
 		${LOCALBASE}/sbin/beadm:sysutils/beadm \
 		${LOCALBASE}/etc/rc.d/fail2ban:security/py-fail2ban \
@@ -71,7 +70,6 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		x11vnc>=0:net/x11vnc \
 		disktype>=0:sysutils/disktype \
 		openntpd>=0:net/openntpd \
-		dhcpcd>=0:net/dhcpcd \
 		git:devel/git \
 		xv>=0:graphics/xv
 
