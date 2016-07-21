@@ -23,52 +23,20 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		${LOCALBASE}/bin/sysadm-client:sysutils/sysadm-client \
 		${LOCALBASE}/bin/lpreserver:sysutils/life-preserver \
 		${LOCALBASE}/bin/personacrypt:sysutils/personacrypt \
-		${LOCALBASE}/bin/qterminal:x11/qterminal \
 		${LOCALBASE}/sbin/beadm:sysutils/beadm \
-		${LOCALBASE}/etc/rc.d/fail2ban:security/py-fail2ban \
-		${LOCALBASE}/bin/zip:archivers/zip \
-		${LOCALBASE}/bin/unzip:archivers/unzip \
-		${LOCALBASE}/bin/sudo:security/sudo \
-		${LOCALBASE}/bin/cdrdao:sysutils/cdrdao \
-		${LOCALBASE}/bin/growisofs:sysutils/dvd+rw-tools \
-		${LOCALBASE}/bin/ssh-askpass:security/openssh-askpass \
 		${LOCALBASE}/bin/xdg-open:devel/xdg-utils \
-		${LOCALBASE}/bin/rsync:net/rsync \
-		${LOCALBASE}/bin/rar:archivers/rar \
-		${LOCALBASE}/bin/numlockx:x11/numlockx \
-		${LOCALBASE}/bin/gpg:security/gnupg \
 		${LOCALBASE}/bin/xvkbd:x11/xvkbd \
-		${LOCALBASE}/bin/unrar:archivers/unrar \
-		${LOCALBASE}/bin/7z:archivers/p7zip \
 		lumina-i18n>=0:x11/lumina-i18n \
-		xorg>=0:x11/xorg \
-		xf86-input-synaptics>=0:x11-drivers/xf86-input-synaptics \
-		xf86-video-intel>=0:x11-drivers/xf86-video-intel \
-		xf86-video-scfb>=0:x11-drivers/xf86-video-scfb \
-		noto-lite>=0:x11-fonts/noto-lite \
-		droid-fonts-ttf>=0:x11-fonts/droid-fonts-ttf \
-		libvdpau>=0:multimedia/libvdpau \
-		alsa-lib>=0:audio/alsa-lib \
-		fluxbox-tenr-styles-pack>=0:x11-themes/fluxbox-tenr-styles-pack \
-		vorbis-tools>=0:audio/vorbis-tools \
-		fusefs-ntfs>=0:sysutils/fusefs-ntfs \
+		xorg-minimal>=0:x11/xorg-minimal \
+		x11-drivers>=0:x11-drivers/x11-drivers \
 		nss_mdns>=0:dns/nss_mdns \
-		cursor-jimmac-theme>=0:x11-themes/cursor-jimmac-theme \
 		cuse4bsd-kmod>=0:multimedia/cuse4bsd-kmod \
 		webcamd>=0:multimedia/webcamd \
 		pciutils>=0:sysutils/pciutils \
-		linux_dvbwrapper-kmod>=0:multimedia/linux_dvbwrapper-kmod \
-		volman>=0:sysutils/volman \
-		fribidi>=0:converters/fribidi \
-		libdvdcss>=0:multimedia/libdvdcss \
 		pam_ldap>=0:security/pam_ldap \
 		pam_mkhomedir>=0:security/pam_mkhomedir \
 		nss_ldap>=0:net/nss_ldap \
-		rpm2cpio>=0:archivers/rpm2cpio \
-		libaacs>=0:multimedia/libaacs \
-		xbrightness>=0:x11/xbrightness \
 		x11vnc>=0:net/x11vnc \
-		disktype>=0:sysutils/disktype \
 		openntpd>=0:net/openntpd \
 		git:devel/git \
 		xv>=0:graphics/xv
