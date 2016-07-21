@@ -29,7 +29,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		${LOCALBASE}/bin/xvkbd:x11/xvkbd \
 		lumina-i18n>=0:x11/lumina-i18n \
 		xorg-minimal>=0:x11/xorg-minimal \
-		x11-drivers>=0:x11-drivers/x11-drivers \
+		x11-drivers>=0:x11-drivers/xorg-drivers \
 		nss_mdns>=0:dns/nss_mdns \
 		cuse4bsd-kmod>=0:multimedia/cuse4bsd-kmod \
 		webcamd>=0:multimedia/webcamd \
