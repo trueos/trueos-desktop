@@ -1,4 +1,3 @@
-# Joe Maloney <jmaloney@ixsystems.com>
 # $FreeBSD$
 
 PORTNAME=	trueos-desktop
@@ -10,14 +9,16 @@ DISTFILES=
 MAINTAINER=	jmaloney@ixsystems.com
 COMMENT=	TrueOS Desktop
 
+LICENSE=	BSD2CLAUSE
+
 RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		${LOCALBASE}/bin/pc-updatemanager:sysutils/pc-updatemanager \
 		${LOCALBASE}/bin/qsudo:sysutils/qsudo \
 		${LOCALBASE}/bin/pc-wificonfig:sysutils/pc-networkmanager \
 		${LOCALBASE}/sbin/pc-sysinstall:sysutils/pc-sysinstall \
-                ${LOCALBASE}/share/trueos/scripts/functions.sh:sysutils/trueos-libsh \
-                ${LOCALBASE}/bin/pc-checkxdisplay:sysutils/trueos-utils \
-                ${LOCALBASE}/bin/pc-firstboot:sysutils/trueos-utils-qt5 \
+		${LOCALBASE}/share/trueos/scripts/functions.sh:sysutils/trueos-libsh \
+		${LOCALBASE}/bin/pc-checkxdisplay:sysutils/trueos-utils \
+		${LOCALBASE}/bin/pc-firstboot:sysutils/trueos-utils-qt5 \
 		${LOCALBASE}/bin/pc-mixer:audio/pc-mixer \
 		${LOCALBASE}/bin/sysadm-binary:sysutils/sysadm \
 		${LOCALBASE}/bin/sysadm-client:sysutils/sysadm-client \
@@ -44,7 +45,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 WRKSRC_SUBDIR=  xtrafiles
 MAKE_ARGS=      PREFIX=${STAGEDIR}${PREFIX}
 
-CONFLICTS=      pcbsd-utils* trueos-server
+CONFLICTS=      pcbsd-utils-[0-9]* trueos-server-[0-9]*
 WRKSRC_SUBDIR=	xtrafiles
 MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
 
