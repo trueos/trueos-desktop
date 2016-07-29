@@ -28,6 +28,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		${LOCALBASE}/bin/xdg-open:devel/xdg-utils \
 		${LOCALBASE}/bin/xvkbd:x11/xvkbd \
 		lumina-i18n>=0:x11/lumina-i18n \
+		fluxbox-tenr-styles-pack>=0:x11-themes/fluxbox-tenr-styles-pack \
 		xorg-minimal>=0:x11/xorg-minimal \
 		xorg-drivers>=0:x11-drivers/xorg-drivers \
 		nss_mdns>=0:dns/nss_mdns \
