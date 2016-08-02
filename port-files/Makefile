@@ -28,7 +28,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		${LOCALBASE}/sbin/beadm:sysutils/beadm \
 		${LOCALBASE}/bin/xdg-open:devel/xdg-utils \
 		${LOCALBASE}/bin/xvkbd:x11/xvkbd \
-		trueos-handbook>=0:misc/trueos-handbook
+		trueos-handbook>=0:misc/trueos-handbook \
 		lumina-i18n>=0:x11/lumina-i18n \
 		fluxbox-tenr-styles-pack>=0:x11-themes/fluxbox-tenr-styles-pack \
 		xorg-minimal>=0:x11/xorg-minimal \
