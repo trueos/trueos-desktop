@@ -102,12 +102,12 @@ share/trueos/desktop-defaults/usr/local/share/trueos/icons/hwinfo.png
 share/trueos/desktop-defaults/usr/local/share/trueos/icons/input-keyboard.png
 share/trueos/desktop-defaults/usr/local/share/trueos/icons/ldap.png
 share/trueos/desktop-defaults/usr/local/share/trueos/icons/mythtv.png
-share/trueos/desktop-defaults/usr/local/share/trueos/icons/pcbsd-handbook.png
 share/trueos/desktop-defaults/usr/local/share/trueos/icons/preferences-desktop-theme.png
 share/trueos/desktop-defaults/usr/local/share/trueos/icons/preferences-desktop.png
 share/trueos/desktop-defaults/usr/local/share/trueos/icons/soundconfig.png
 share/trueos/desktop-defaults/usr/local/share/trueos/icons/system-software-update.png
 share/trueos/desktop-defaults/usr/local/share/trueos/icons/system-users.png
+share/trueos/desktop-defaults/usr/local/share/trueos/icons/trueos-handbook.png
 share/trueos/desktop-defaults/usr/local/share/trueos/icons/utilities-system-monitor.png
 share/trueos/desktop-defaults/usr/local/share/trueos/scripts/first-boot.sh
 share/trueos/desktop-defaults/usr/local/share/trueos/scripts/lidchanged.sh
