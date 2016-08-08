@@ -6,6 +6,7 @@ etc/fonts/local.conf
 etc/pkg/fingerprints/trueos/trusted/pkg.cdn.trueos.org.20160701
 etc/pkg/repos/trueos.conf.dist
 etc/sudoers.d/trueos
+share/X11/xorg.conf.d/15-nvidia.conf
 share/X11/xorg.conf.d/20-intel.conf
 share/icons/default/index.theme
 share/pixmaps/start-here-lumina.png
