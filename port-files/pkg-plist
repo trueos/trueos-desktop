@@ -85,11 +85,8 @@ share/trueos/desktop-defaults/usr/local/etc/screenrc
 share/trueos/desktop-defaults/usr/local/etc/sudoers
 share/trueos/desktop-defaults/usr/local/etc/trueos.conf
 share/trueos/desktop-defaults/usr/local/etc/volman.conf
-share/trueos/desktop-defaults/usr/local/etc/xdg/autostart/life-preserver.desktop
 share/trueos/desktop-defaults/usr/local/etc/xdg/autostart/pc-mixer.desktop
 share/trueos/desktop-defaults/usr/local/etc/xdg/autostart/pc-mounttray.desktop
-share/trueos/desktop-defaults/usr/local/etc/xdg/autostart/pc-nettray.desktop
-share/trueos/desktop-defaults/usr/local/etc/xdg/autostart/pc-updatemanager.desktop
 share/trueos/desktop-defaults/usr/local/etc/xdg/autostart/pc-welcome.desktop
 share/trueos/desktop-defaults/usr/local/share/applications/handbook.desktop
 share/trueos/desktop-defaults/usr/local/share/trueos/fluxboxinit/init
@@ -121,7 +118,6 @@ share/trueos/desktop-defaults/usr/local/share/trueos/scripts/vbox-check
 share/trueos/desktop-defaults/usr/local/share/trueos/scripts/waitforsystray.sh
 share/trueos/desktop-defaults/usr/local/share/trueos/xdg-auto/checkwelcome.sh
 share/trueos/desktop-defaults/usr/local/share/trueos/xdg-auto/life-preserver.sh
-share/trueos/desktop-defaults/usr/local/share/trueos/xdg-auto/net-trays.sh
 share/trueos/desktop-defaults/usr/local/share/trueos/xdg-auto/pc-mixer.sh
 share/trueos/desktop-defaults/usr/local/share/trueos/xdg-auto/pc-mounttray.sh
 share/trueos/desktop-defaults/usr/local/share/trueos/xdg-auto/pc-trayapps.sh
