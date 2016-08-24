@@ -46,7 +46,9 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		openntpd>=0:net/openntpd \
 		git:devel/git \
 		xv>=0:graphics/xv \
-		powerdxx>=0:sysutils/powerdxx
+		powerdxx>=0:sysutils/powerdxx \
+		tor>=0:security/tor \
+		socat>=0:net/socat
 
 WRKSRC_SUBDIR=  xtrafiles
 MAKE_ARGS=      PREFIX=${STAGEDIR}${PREFIX}
