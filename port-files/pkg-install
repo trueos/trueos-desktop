@@ -16,10 +16,12 @@ fi
 # REMOVEME - Temp fix to ensure i915kms is loaded on upgraded systems
 # 8-29-2016
 if [ -e "/etc/rc.conf.trueos" ] ; then
+  set +e
   grep -q "i915kms" /etc/rc.conf.trueos
   if [ $? -eq 0 ] ; then
-    echo "kldload_i915kms=\"i915kms\"" >> /etc/rc.conf
+    sysrc -f /etc/rc.conf kldload_i915kms="i915kms"
   fi
+  set -e
 fi
 
 # Copy over the rc.conf.trueos file
