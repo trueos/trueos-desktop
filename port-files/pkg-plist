@@ -15,7 +15,8 @@ share/trueos/conf/logo-trueos.4th
 share/trueos/conf/ntpd.conf
 share/trueos/conf/pcbsd-menu-commands.4th
 share/trueos/conf/pcbsd-menu.rc
-share/trueos/conf/rc.conf.trueos
+share/trueos/conf/rc.conf.desktop
+share/trueos/conf/rc.conf.server
 share/trueos/conf/smb4.conf
 share/trueos/conf/torrc
 share/trueos/desktop-defaults/boot/grub/themes/trueos/README
