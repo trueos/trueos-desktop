@@ -13,8 +13,19 @@ if [ $? -eq 0 ] ; then
    exit 0
 fi
 
+# REMOVEME - Temp fix to ensure i915kms is loaded on upgraded systems
+# 8-29-2016
+if [ -e "/etc/rc.conf.trueos" ] ; then
+  set +e
+  grep -q "i915kms" /etc/rc.conf.trueos
+  if [ $? -eq 0 ] ; then
+    sysrc -f /etc/rc.conf kldload_i915kms="i915kms"
+  fi
+  set -e
+fi
+
 # Copy over the rc.conf.trueos file
-install -m 644 ${PREFIX}/share/trueos/conf/rc.conf.trueos /etc/rc.conf.trueos
+install -m 644 ${PREFIX}/share/trueos/conf/rc.conf.desktop /etc/rc.conf.trueos
 if [ -e "/etc/default/trueos" -o -e "/etc/defaults/trueos-desktop" ] ; then
   install -m 644 ${PREFIX}/share/trueos/conf/loader.conf.trueos /boot/loader.conf.trueos
   install -m 644 ${PREFIX}/share/trueos/conf/brand-trueos.4th /boot/brand-trueos.4th

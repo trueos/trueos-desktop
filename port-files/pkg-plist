@@ -7,6 +7,7 @@ etc/pkg/fingerprints/trueos/trusted/pkg.cdn.trueos.org.20160701
 etc/pkg/repos/trueos.conf.dist
 etc/sudoers.d/trueos
 share/X11/xorg.conf.d/20-intel.conf
+share/fluxbox/styles/bora_blue_4k/theme.cfg
 share/icons/default/index.theme
 share/pixmaps/start-here-lumina.png
 share/trueos/conf/brand-trueos.4th
@@ -15,7 +16,8 @@ share/trueos/conf/logo-trueos.4th
 share/trueos/conf/ntpd.conf
 share/trueos/conf/pcbsd-menu-commands.4th
 share/trueos/conf/pcbsd-menu.rc
-share/trueos/conf/rc.conf.trueos
+share/trueos/conf/rc.conf.desktop
+share/trueos/conf/rc.conf.server
 share/trueos/conf/smb4.conf
 share/trueos/conf/torrc
 share/trueos/desktop-defaults/boot/grub/themes/trueos/README
