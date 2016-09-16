@@ -9,6 +9,17 @@ etc/sudoers.d/trueos
 share/fluxbox/styles/bora_blue_4k/theme.cfg
 share/icons/default/index.theme
 share/pixmaps/start-here-lumina.png
+share/trueos/cardDetect/XF86Config.compat
+share/trueos/cardDetect/XF86Config.default
+share/trueos/cardDetect/XF86Config.intel
+share/trueos/cardDetect/XF86Config.modesetting
+share/trueos/cardDetect/XF86Config.qemu
+share/trueos/cardDetect/XF86Config.scfb
+share/trueos/cardDetect/XF86Config.virtualbox
+share/trueos/cardDetect/XF86Config.vmware
+share/trueos/cardDetect/setuptouch.sh
+share/trueos/cardDetect/x_config.sh
+share/trueos/cardDetect/xorg.conf.virtualbox
 share/trueos/conf/brand-trueos.4th
 share/trueos/conf/loader.conf.trueos
 share/trueos/conf/logo-trueos.4th
