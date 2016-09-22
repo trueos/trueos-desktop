@@ -24,6 +24,18 @@ if [ -e "/etc/rc.conf.trueos" ] ; then
   set -e
 fi
 
+## REMOVEME - Eventually nuke, but for now determine if we need to copy modesetting
+# driver over to xorg.conf
+# 9-16-2016
+if [ -e "/var/log/Xorg.0.log" ] ; then
+  set +e
+  grep -q "modesetting" /var/log/Xorg.0.log
+  if [ $? -eq 0 ] ; then
+    cp ${PREFIX}/share/trueos/cardDetect/XF86Config.modesetting /etc/X11/xorg.conf
+  fi
+  set -e
+fi
+
 # Copy over the rc.conf.trueos file
 install -m 644 ${PREFIX}/share/trueos/conf/rc.conf.desktop /etc/rc.conf.trueos
 if [ -e "/etc/default/trueos" -o -e "/etc/defaults/trueos-desktop" ] ; then
