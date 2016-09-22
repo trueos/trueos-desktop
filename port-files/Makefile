@@ -50,7 +50,12 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		xv>=0:graphics/xv \
 		powerdxx>=0:sysutils/powerdxx \
 		tor>=0:security/tor \
+		fcitx-m17n>=0:textproc/fcitx-m17n \
 		fcitx-qt5>=0:textproc/fcitx-qt5 \
+		ja-fcitx-mozc>=0:japanese/fcitx-mozc \
+		ko-fcitx-hangul>=0:korean/fcitx-hangul \
+		zh-fcitx-chewing>=0:chinese/fcitx-chewing \
+		zh-fcitx-googlepinyin>=0:chinese/fcitx-googlepinyin \
 		socat>=0:net/socat
 
 WRKSRC_SUBDIR=  xtrafiles
