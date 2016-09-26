@@ -57,7 +57,8 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		zh-fcitx-configtool>=0:chinese/fcitx-configtool \
 		zh-fcitx-chewing>=0:chinese/fcitx-chewing \
 		zh-fcitx-googlepinyin>=0:chinese/fcitx-googlepinyin \
-		socat>=0:net/socat
+		socat>=0:net/socat \
+		mesa-demos>=0:graphics/mesa-demos
 
 WRKSRC_SUBDIR=  xtrafiles
 MAKE_ARGS=      PREFIX=${STAGEDIR}${PREFIX}
