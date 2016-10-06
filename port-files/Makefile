@@ -56,7 +56,6 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		ko-fcitx-hangul>=0:korean/fcitx-hangul \
 		zh-fcitx-configtool>=0:chinese/fcitx-configtool \
 		zh-fcitx-chewing>=0:chinese/fcitx-chewing \
-		zh-fcitx-googlepinyin>=0:chinese/fcitx-googlepinyin \
 		socat>=0:net/socat \
 		mesa-demos>=0:graphics/mesa-demos
 
