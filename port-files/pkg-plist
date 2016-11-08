@@ -62,6 +62,7 @@ share/trueos/desktop-defaults/boot/grub/themes/trueos/terminal_box_w.png
 share/trueos/desktop-defaults/boot/grub/themes/trueos/theme.txt
 share/trueos/desktop-defaults/boot/grub/trueosfont.pf2
 share/trueos/desktop-defaults/etc/blacklist
+share/trueos/desktop-defaults/etc/conf.d/modules
 share/trueos/desktop-defaults/etc/crontab
 share/trueos/desktop-defaults/etc/devfs.conf
 share/trueos/desktop-defaults/etc/devfs.rules
@@ -255,6 +256,7 @@ share/trueos/server-defaults/boot/grub/themes/trueos/terminal_box_sw.png
 share/trueos/server-defaults/boot/grub/themes/trueos/terminal_box_w.png
 share/trueos/server-defaults/boot/grub/themes/trueos/theme.txt
 share/trueos/server-defaults/boot/grub/trueosfont.pf2
+share/trueos/server-defaults/etc/conf.d/modules
 share/trueos/server-defaults/root/.bashrc
 share/trueos/server-defaults/root/.cshrc
 share/trueos/server-defaults/root/.profile
