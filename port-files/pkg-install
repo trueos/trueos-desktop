@@ -44,9 +44,9 @@ if [ ! -e "${PREFIX}/etc/trueos.conf" ] ; then
   # Do the first-time setup
   echo "Doing first-time bootstrap"
   if [ -e "/etc/defaults/trueos-desktop" ] ; then
-    tar cvf - -C ${PREFIX}/share/trueos/desktop-defaults/ . 2>/dev/null | tar xvf - -C / 2>/$
+    tar cvf - -C ${PREFIX}/share/trueos/desktop-defaults/ . 2>/dev/null | tar xvpf - -C / 2>/dev/null
   else
-    tar cvf - -C ${PREFIX}/share/trueos/server-defaults/ . 2>/dev/null | tar xvf - -C / 2>/d$
+    tar cvf - -C ${PREFIX}/share/trueos/server-defaults/ . 2>/dev/null | tar xvpf - -C / 2>/dev/null
   fi
 fi
 
