@@ -53,16 +53,10 @@ fi
 
 # Enable the OpenRC services
 set +e
-if [ -e "/etc/defaults/trueos-desktop" ] ; then
-    /sbin/rc-update add ipfw boot
-    /sbin/rc-update add dhcpcd default
-    /sbin/rc-update add wpa_supplicant default
-    /sbin/rc-update add openntpd default
-    /sbin/rc-update add pcdm default
-else
-    /sbin/rc-update add ipfw boot
-    /sbin/rc-update add dhcpcd default
-    /sbin/rc-update add wpa_supplicant default
-fi
+/sbin/rc-update add ipfw boot
+/sbin/rc-update add dhcpcd default
+/sbin/rc-update add wpa_supplicant default
+/sbin/rc-update add openntpd default
+/sbin/rc-update add pcdm default
 
 exit 0
