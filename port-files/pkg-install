@@ -58,5 +58,6 @@ set +e
 /sbin/rc-update add wpa_supplicant default
 /sbin/rc-update add openntpd default
 /sbin/rc-update add pcdm default
+/sbin/rc-update add sysadm default
 
 exit 0
