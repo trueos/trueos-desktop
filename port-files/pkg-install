@@ -61,15 +61,9 @@ set +e
 /sbin/rc-update add sysadm default
 
 # Enable OpenRC settings
-
-if [ -e "/etc/rc.conf" ] ; then
-  set +e
-  grep -q "rc_parallel" /etc/rc.conf
-  if [ $? -eq 0 ] ; then
-    sysrc -f /etc/rc.conf rc_parallel="YES"
-    sysrc -f /etc/rc.conf rc_logger="YES"
-    sysrc -f /etc/rc.conf rc_log_path="/var/log/rc.log"
-  fi  
-  set -e
+set +e
+sysrc -f /etc/rc.conf rc_parallel="YES"
+sysrc -f /etc/rc.conf rc_logger="YES"
+sysrc -f /etc/rc.conf rc_log_path="/var/log/rc.log"
 
 exit 0
