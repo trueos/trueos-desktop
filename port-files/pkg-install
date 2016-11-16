@@ -55,6 +55,7 @@ fi
 set +e
 /sbin/rc-update add ipfw boot
 /sbin/rc-update add dhcpcd default
+/sbin/rc-update add cupsd default
 /sbin/rc-update add wpa_supplicant default
 /sbin/rc-update add openntpd default
 /sbin/rc-update add pcdm default
