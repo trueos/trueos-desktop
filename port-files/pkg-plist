@@ -3,8 +3,6 @@ bin/enable-tor-mode
 bin/restamp-grub
 bin/warden-to-iocage
 etc/fonts/local.conf
-etc/pkg/fingerprints/trueos/trusted/pkg.cdn.trueos.org.20160701
-etc/pkg/repos/trueos.conf.dist
 etc/sudoers.d/trueos
 share/fluxbox/styles/bora_blue_4k/theme.cfg
 share/icons/default/index.theme
