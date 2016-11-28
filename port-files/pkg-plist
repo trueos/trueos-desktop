@@ -132,11 +132,6 @@ share/trueos/desktop-defaults/usr/local/share/trueos/xdg-auto/life-preserver.sh
 share/trueos/desktop-defaults/usr/local/share/trueos/xdg-auto/pc-mixer.sh
 share/trueos/desktop-defaults/usr/local/share/trueos/xdg-auto/pc-mounttray.sh
 share/trueos/desktop-defaults/usr/local/share/trueos/xdg-auto/pc-trayapps.sh
-share/trueos/desktop-defaults/usr/local/share/trueos/xstartup/disable-beep.sh
-share/trueos/desktop-defaults/usr/local/share/trueos/xstartup/enable-inputmethod.sh
-share/trueos/desktop-defaults/usr/local/share/trueos/xstartup/enable-xprofile.sh
-share/trueos/desktop-defaults/usr/local/share/trueos/xstartup/gpg-agent.sh
-share/trueos/desktop-defaults/usr/local/share/trueos/xstartup/ssh-agent.sh
 share/trueos/desktop-defaults/usr/local/share/wallpapers/FreeBSD/a_1280x1024.jpg
 share/trueos/desktop-defaults/usr/local/share/wallpapers/FreeBSD/a_1600x900.jpg
 share/trueos/desktop-defaults/usr/local/share/wallpapers/FreeBSD/b_1280x1024.jpg
@@ -269,3 +264,8 @@ share/trueos/server-defaults/usr/share/skel/.vimrc
 share/trueos/server-defaults/usr/share/skel/dot.cshrc
 share/trueos/server-defaults/usr/share/skel/dot.profile
 share/trueos/server-defaults/usr/share/skel/dot.shrc
+share/trueos/xstartup/disable-beep.sh
+share/trueos/xstartup/enable-inputmethod.sh
+share/trueos/xstartup/enable-xprofile.sh
+share/trueos/xstartup/gpg-agent.sh
+share/trueos/xstartup/ssh-agent.sh
