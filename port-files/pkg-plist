@@ -1,5 +1,6 @@
 bin/disable-tor-mode
 bin/enable-tor-mode
+bin/migrate_rc_openrc
 bin/restamp-grub
 bin/warden-to-iocage
 etc/fonts/local.conf
