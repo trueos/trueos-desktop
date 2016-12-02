@@ -65,6 +65,7 @@ set +e
 /sbin/rc-update add openntpd default
 /sbin/rc-update add pcdm default
 /sbin/rc-update add sysadm default
+/sbin/rc-update add dbus default
 
 # Enable OpenRC settings
 set +e
