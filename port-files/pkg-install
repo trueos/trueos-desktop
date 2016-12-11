@@ -71,4 +71,7 @@ sysrc -f /etc/rc.conf rc_parallel="YES"
 sysrc -f /etc/rc.conf rc_logger="YES"
 sysrc -f /etc/rc.conf rc_log_path="/var/log/rc.log"
 
+# Enable Linux Compat
+sysrc -f /etc/rc.conf linux_enable="YES"
+
 exit 0
