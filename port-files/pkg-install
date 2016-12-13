@@ -59,9 +59,10 @@ set +e
 /sbin/rc-update add statd default
 /sbin/rc-update add lockd default
 /sbin/rc-update add rpcbind default
-/sbin/rc-update add dhcpcd default
 /sbin/rc-update add cupsd default
-/sbin/rc-update add wpa_supplicant default
+/sbin/rc-update add cups_browsed default
+/sbin/rc-update delete dhcpcd default
+/sbin/rc-update delete wpa_supplicant default
 /sbin/rc-update add openntpd default
 /sbin/rc-update add pcdm default
 /sbin/rc-update add sysadm default
