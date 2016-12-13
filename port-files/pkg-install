@@ -44,11 +44,7 @@ fi
 if [ ! -e "${PREFIX}/etc/trueos.conf" ] ; then
   # Do the first-time setup
   echo "Doing first-time bootstrap"
-  if [ -e "/etc/defaults/trueos-desktop" ] ; then
-    tar cvf - -C ${PREFIX}/share/trueos/desktop-defaults/ . 2>/dev/null | tar xvpf - -C / 2>/dev/null
-  else
-    tar cvf - -C ${PREFIX}/share/trueos/server-defaults/ . 2>/dev/null | tar xvpf - -C / 2>/dev/null
-  fi
+  tar cvf - -C ${PREFIX}/share/trueos/desktop-defaults/ . 2>/dev/null | tar xvpf - -C / 2>/dev/null
 fi
 
 # Enable the OpenRC services
@@ -66,11 +62,17 @@ set +e
 /sbin/rc-update add openntpd default
 /sbin/rc-update add pcdm default
 /sbin/rc-update add sysadm default
+/sbin/rc-update add dbus default
+/sbin/rc-update add trueosinit default
+/sbin/rc-update add moused default
 
 # Enable OpenRC settings
 set +e
 sysrc -f /etc/rc.conf rc_parallel="YES"
 sysrc -f /etc/rc.conf rc_logger="YES"
 sysrc -f /etc/rc.conf rc_log_path="/var/log/rc.log"
+
+# Enable Linux Compat
+sysrc -f /etc/rc.conf linux_enable="YES"
 
 exit 0

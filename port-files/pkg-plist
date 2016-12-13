@@ -90,6 +90,7 @@ share/trueos/desktop-defaults/usr/local/etc/cups/cupsd.conf
 share/trueos/desktop-defaults/usr/local/etc/default/grub
 share/trueos/desktop-defaults/usr/local/etc/foomatic/filter.conf
 share/trueos/desktop-defaults/usr/local/etc/fscd.conf
+share/trueos/desktop-defaults/usr/local/etc/init.d/trueosinit
 share/trueos/desktop-defaults/usr/local/etc/pkg.conf
 share/trueos/desktop-defaults/usr/local/etc/polkit-1/localauthority/50-local.d/system.pkla
 share/trueos/desktop-defaults/usr/local/etc/rc.d/trueosinit
