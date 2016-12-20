@@ -68,7 +68,7 @@ set +e
 
 # Enable OpenRC settings
 set +e
-sysrc -f /etc/rc.conf rc_parallel="YES"
+sysrc -f /etc/rc.conf rc_parallel="NO"
 sysrc -f /etc/rc.conf rc_logger="YES"
 sysrc -f /etc/rc.conf rc_log_path="/var/log/rc.log"
 
