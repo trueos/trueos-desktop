@@ -51,6 +51,7 @@ fi
 set +e
 /sbin/rc-update add ipfw boot
 /sbin/rc-update add devd boot
+/sbin/rc-update add devfs boot
 /sbin/rc-update add automount default
 /sbin/rc-update add statd default
 /sbin/rc-update add lockd default
@@ -63,6 +64,7 @@ set +e
 /sbin/rc-update add pcdm default
 /sbin/rc-update add sysadm default
 /sbin/rc-update add dbus default
+/sbin/rc-update add hald default
 /sbin/rc-update add trueosinit default
 /sbin/rc-update add moused default
 
