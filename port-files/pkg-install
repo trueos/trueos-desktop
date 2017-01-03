@@ -49,7 +49,6 @@ fi
 
 # Enable the OpenRC services
 set +e
-/sbin/rc-update add ipfw boot
 /sbin/rc-update add devd boot
 /sbin/rc-update add devfs boot
 /sbin/rc-update add automount default
