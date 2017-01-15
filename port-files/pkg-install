@@ -37,7 +37,6 @@ if [ -e "/var/log/Xorg.0.log" ] ; then
 fi
 
 # Copy over customizations for TrueOS
-  install -m 644 ${PREFIX}/share/trueos/conf/loader.conf.trueos /boot/loader.conf.trueos
   install -m 644 ${PREFIX}/share/trueos/conf/brand-trueos.4th /boot/brand-trueos.4th
   install -m 644 ${PREFIX}/share/trueos/desktop-defaults/etc/conf.d/modules /etc/conf.d/modules
 
