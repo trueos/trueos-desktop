@@ -96,7 +96,6 @@ share/trueos/desktop-defaults/usr/local/etc/volman.conf
 share/trueos/desktop-defaults/usr/local/etc/xdg/autostart/pc-mixer.desktop
 share/trueos/desktop-defaults/usr/local/etc/xdg/autostart/pc-mounttray.desktop
 share/trueos/desktop-defaults/usr/local/etc/xdg/autostart/pc-welcome.desktop
-share/trueos/desktop-defaults/usr/local/share/applications/handbook.desktop
 share/trueos/desktop-defaults/usr/local/share/trueos/fluxboxinit/init
 share/trueos/desktop-defaults/usr/local/share/trueos/fluxboxinit/keys
 share/trueos/desktop-defaults/usr/local/share/trueos/fluxboxinit/menu
@@ -112,7 +111,6 @@ share/trueos/desktop-defaults/usr/local/share/trueos/icons/preferences-desktop.p
 share/trueos/desktop-defaults/usr/local/share/trueos/icons/soundconfig.png
 share/trueos/desktop-defaults/usr/local/share/trueos/icons/system-software-update.png
 share/trueos/desktop-defaults/usr/local/share/trueos/icons/system-users.png
-share/trueos/desktop-defaults/usr/local/share/trueos/icons/trueos-handbook.png
 share/trueos/desktop-defaults/usr/local/share/trueos/icons/utilities-system-monitor.png
 share/trueos/desktop-defaults/usr/local/share/trueos/scripts/first-boot.sh
 share/trueos/desktop-defaults/usr/local/share/trueos/scripts/lidchanged.sh
