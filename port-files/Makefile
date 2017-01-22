@@ -41,9 +41,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		cuse4bsd-kmod>=0:multimedia/cuse4bsd-kmod \
 		webcamd>=0:multimedia/webcamd \
 		pciutils>=0:sysutils/pciutils \
-		pam_ldap>=0:security/pam_ldap \
 		pam_mkhomedir>=0:security/pam_mkhomedir \
-		nss_ldap>=0:net/nss_ldap \
 		x11vnc>=0:net/x11vnc \
 		openntpd>=0:net/openntpd \
 		git:devel/git \
