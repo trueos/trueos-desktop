@@ -56,6 +56,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		socat>=0:net/socat \
 		mesa-demos>=0:graphics/mesa-demos \
 		dhcpcd>=0:net/dhcpcd \
+		bsdstats>=0:sysutils/bsdstats \
 		wpa_supplicant>=0:security/wpa_supplicant
 
 WRKSRC_SUBDIR=  xtrafiles
