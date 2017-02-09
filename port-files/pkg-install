@@ -72,6 +72,7 @@ fi
 /sbin/rc-update add hald default
 /sbin/rc-update add trueosinit default
 /sbin/rc-update add moused default
+/sbin/rc-update add bsdstats default
 
 touch /var/.openrc-migrate-1
 
