@@ -61,7 +61,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 WRKSRC_SUBDIR=  xtrafiles
 MAKE_ARGS=      PREFIX=${STAGEDIR}${PREFIX}
 
-CONFLICTS=      pcbsd-utils-[0-9]* trueos-server-[0-9]* pc-mounttray*
+CONFLICTS=      pcbsd-utils-[0-9]* trueos-server-[0-9]* pc-mounttray-[0-9]*
 WRKSRC_SUBDIR=	xtrafiles
 MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
 
