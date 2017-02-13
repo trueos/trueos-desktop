@@ -26,7 +26,6 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		${LOCALBASE}/bin/personacrypt:sysutils/personacrypt \
 		${LOCALBASE}/bin/pc-pdfviewer:graphics/pc-pdfviewer \
 		${LOCALBASE}/bin/pc-webkitviewer:www/pc-webkitviewer \
-		${LOCALBASE}/bin/pc-mounttray:sysutils/pc-mounttray \
 		${LOCALBASE}/bin/pc-diskmanager:sysutils/pc-diskmanager \
 		${LOCALBASE}/sbin/beadm:sysutils/beadm \
 		${LOCALBASE}/bin/xdg-open:devel/xdg-utils \
@@ -62,7 +61,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 WRKSRC_SUBDIR=  xtrafiles
 MAKE_ARGS=      PREFIX=${STAGEDIR}${PREFIX}
 
-CONFLICTS=      pcbsd-utils-[0-9]* trueos-server-[0-9]*
+CONFLICTS=      pcbsd-utils-[0-9]* trueos-server-[0-9]* pc-mounttray*
 WRKSRC_SUBDIR=	xtrafiles
 MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
 
