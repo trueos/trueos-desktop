@@ -2,7 +2,10 @@ bin/disable-tor-mode
 bin/enable-tor-mode
 bin/migrate_rc_openrc
 bin/restamp-grub
+bin/trueos-mount
+bin/trueos-unmount
 bin/warden-to-iocage
+etc/devd/automount.conf
 etc/fonts/local.conf
 etc/sudoers.d/trueos
 share/fluxbox/styles/bora_blue_4k/theme.cfg
