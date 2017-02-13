@@ -73,6 +73,8 @@ fi
 /sbin/rc-update add trueosinit default
 /sbin/rc-update add moused default
 /sbin/rc-update add bsdstats default
+/sbin/rc-update add automountd default
+/sbin/rc-update add autounmountd default
 
 touch /var/.openrc-migrate-1
 
