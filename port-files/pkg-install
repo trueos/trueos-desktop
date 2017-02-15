@@ -38,7 +38,6 @@ fi
 
 # Copy over customizations for TrueOS
   install -m 644 ${PREFIX}/share/trueos/conf/brand-trueos.4th /boot/brand-trueos.4th
-  install -m 644 ${PREFIX}/share/trueos/desktop-defaults/etc/conf.d/modules /etc/conf.d/modules
 
 if [ ! -e "${PREFIX}/etc/trueos.conf" ] ; then
   # Do the first-time setup
