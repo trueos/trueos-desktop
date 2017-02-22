@@ -7,6 +7,8 @@ if [ "$2" != "POST-INSTALL" ] ; then
    exit 0
 fi
 
+set +e
+
 # If this is during staging, we can skip for now
 echo $PREFIX | grep -q '/stage/'
 if [ $? -eq 0 ] ; then
@@ -16,24 +18,20 @@ fi
 # REMOVEME - Temp fix to ensure i915kms is loaded on upgraded systems
 # 8-29-2016
 if [ -e "/etc/rc.conf.trueos" ] ; then
-  set +e
   grep -q "i915kms" /etc/rc.conf.trueos
   if [ $? -eq 0 ] ; then
     sysrc -f /etc/rc.conf kldload_i915kms="i915kms"
   fi
-  set -e
 fi
 
 ## REMOVEME - Eventually nuke, but for now determine if we need to copy modesetting
 # driver over to xorg.conf
 # 9-16-2016
 if [ -e "/var/log/Xorg.0.log" ] ; then
-  set +e
   grep -q "modesetting" /var/log/Xorg.0.log
   if [ $? -eq 0 ] ; then
     cp ${PREFIX}/share/trueos/cardDetect/XF86Config.modesetting /etc/X11/xorg.conf
   fi
-  set -e
 fi
 
 # Copy over customizations for TrueOS
@@ -46,7 +44,6 @@ if [ ! -e "${PREFIX}/etc/trueos.conf" ] ; then
 fi
 
 # Enable the OpenRC services
-set +e
 
 if [ ! -e "/var/.openrc-migrate-1" ] ; then
   /sbin/rc-update add ipfw boot
