@@ -43,6 +43,9 @@ if [ ! -e "${PREFIX}/etc/trueos.conf" ] ; then
   tar cvf - -C ${PREFIX}/share/trueos/desktop-defaults/ . 2>/dev/null | tar xvpf - -C / 2>/dev/null
 fi
 
+# Copy over some defaults on upgrade
+cp ${PREFIX}/share/trueos/desktop-defaults/etc/devfs.rules /etc/devfs.rules
+
 # Enable the OpenRC services
 
 if [ ! -e "/var/.openrc-migrate-1" ] ; then
