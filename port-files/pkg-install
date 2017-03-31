@@ -78,4 +78,13 @@ if [ ! -e "/var/.openrc-migrate-2" ] ; then
 fi
 touch /var/.openrc-migrate-2
 
+if [ ! -e "/var/.openrc-migrate-3" ] ; then
+  if [ -e "/etc/conf.d/modules" ] ; then
+    cat /etc/conf.d/modules | grep -v "modules=" > /etc/conf.d/modules.new
+    mv /etc/conf.d/modules.new /etc/conf.d/modules
+    chmod 755 /etc/conf.d/modules
+  fi
+fi
+touch /var/.openrc-migrate-3
+
 exit 0
