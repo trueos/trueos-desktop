@@ -15,25 +15,6 @@ if [ $? -eq 0 ] ; then
    exit 0
 fi
 
-# REMOVEME - Temp fix to ensure i915kms is loaded on upgraded systems
-# 8-29-2016
-if [ -e "/etc/rc.conf.trueos" ] ; then
-  grep -q "i915kms" /etc/rc.conf.trueos
-  if [ $? -eq 0 ] ; then
-    sysrc -f /etc/rc.conf kldload_i915kms="i915kms"
-  fi
-fi
-
-## REMOVEME - Eventually nuke, but for now determine if we need to copy modesetting
-# driver over to xorg.conf
-# 9-16-2016
-if [ -e "/var/log/Xorg.0.log" ] ; then
-  grep -q "modesetting" /var/log/Xorg.0.log
-  if [ $? -eq 0 ] ; then
-    cp ${PREFIX}/share/trueos/cardDetect/XF86Config.modesetting /etc/X11/xorg.conf
-  fi
-fi
-
 # Copy over customizations for TrueOS
   install -m 644 ${PREFIX}/share/trueos/conf/brand-trueos.4th /boot/brand-trueos.4th
 
