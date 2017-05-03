@@ -32,6 +32,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		${LOCALBASE}/sbin/anacron:sysutils/anacron \
 		trueos-handbook>=0:misc/trueos-handbook \
 		lumina>=0:x11/lumina \
+		foomatic-db>=0:print/foomatic-db \
 		fluxbox-tenr-styles-pack>=0:x11-themes/fluxbox-tenr-styles-pack \
 		xorg-minimal>=0:x11/xorg-minimal \
 		xorg-drivers>=0:x11-drivers/xorg-drivers \
