@@ -68,4 +68,10 @@ if [ ! -e "/var/.openrc-migrate-3" ] ; then
 fi
 touch /var/.openrc-migrate-3
 
+if [ ! -e "/var/.openrc-migrate-4" ] ; then
+    /sbin/rc-update add sndiod default
+  fi
+fi
+touch /var/.openrc-migrate-4
+
 exit 0
