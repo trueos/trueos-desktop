@@ -73,4 +73,9 @@ if [ ! -e "/var/.openrc-migrate-4" ] ; then
 fi
 touch /var/.openrc-migrate-4
 
+if [ ! -e "/var/.openrc-migrate-5" ] ; then
+    /sbin/rc-update add mountlate default
+fi
+touch /var/.openrc-migrate-5
+
 exit 0
