@@ -78,4 +78,10 @@ if [ ! -e "/var/.openrc-migrate-5" ] ; then
 fi
 touch /var/.openrc-migrate-5
 
+if [ ! -e "/var/.openrc-migrate-6" ] ; then
+    /usr/sbin/sysrc -f /etc/rc.conf webcamd_enable=YES
+fi
+touch /var/.openrc-migrate-6
+
+
 exit 0
