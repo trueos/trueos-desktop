@@ -12,7 +12,6 @@ if [ $? -ne 0 ] ; then
   exit 1
 fi
 
-
 GITHUB_ORGANIZATION_NAME="trueos";
 REPO_NAME="trueos-core";
 COMMIT_SHA=$( fetch -o - https://api.github.com/repos/${GITHUB_ORGANIZATION_NAME}/${REPO_NAME}/commits/master 2>/dev/null | jq '.sha' | sed 's/"//g');
