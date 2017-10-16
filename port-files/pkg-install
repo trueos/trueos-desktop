@@ -18,6 +18,7 @@ fi
 # Copy over customizations for TrueOS
 install -m 644 ${PREFIX}/share/trueos/conf/rc.conf.desktop /etc/rc.conf.trueos
 install -m 644 ${PREFIX}/share/trueos/conf/brand-trueos.4th /boot/brand-trueos.4th
+install -m 755 ${PREFIX}/share/trueos/desktop-defaults/usr/local/etc/init.d/trueosinit /usr/local/etc/init.d/trueosinit
 
 if [ ! -e "${PREFIX}/etc/trueos.conf" ] ; then
   # Do the first-time setup
