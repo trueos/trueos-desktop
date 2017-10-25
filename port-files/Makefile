@@ -17,7 +17,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		${LOCALBASE}/bin/pc-wificonfig:sysutils/pc-networkmanager \
 		${LOCALBASE}/sbin/pc-sysinstall:sysutils/pc-sysinstall \
 		${LOCALBASE}/share/trueos/scripts/functions.sh:sysutils/trueos-libsh \
-		${LOCALBASE}/bin/pc-checkxdisplay:sysutils/trueos-utils \
+		${LOCALBASE}/bin/pc-firstgui:sysutils/trueos-utils \
 		${LOCALBASE}/bin/pc-firstboot:sysutils/trueos-utils-qt5 \
 		${LOCALBASE}/bin/pc-mixer:audio/pc-mixer \
 		${LOCALBASE}/bin/sysadm-binary:sysutils/sysadm \
