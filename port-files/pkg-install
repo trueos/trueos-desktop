@@ -112,8 +112,8 @@ fi
 touch /var/.openrc-migrate-10
 
 if [ ! -e "/var/.openrc-migrate-11" ] ; then
-  /sbin/rc-update add avahi-daemon
-  /sbin/rc-update add avahi-dnsconfd
+  /sbin/rc-update add avahi-daemon default
+  /sbin/rc-update add avahi-dnsconfd default
 fi
 touch /var/.openrc-migrate-11
 
