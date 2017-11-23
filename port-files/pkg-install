@@ -144,6 +144,8 @@ if [ ! -e "/var/.trueos-migrate-1" ] ; then
   /sbin/rc-update add autounmountd default
   /sbin/rc-update delete sndiod default
   /sbin/rc-update add mountlate default
+  /sbin/rc-update add avahi-daemon default
+  /sbin/rc-update add avahi-dnsconfd default
 fi
 touch /var/.trueos-migrate-1
 
