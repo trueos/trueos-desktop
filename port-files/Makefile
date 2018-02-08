@@ -52,16 +52,14 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		dhcpcd>=0:net/dhcpcd \
 		bsdstats>=0:sysutils/bsdstats
 
-WRKSRC_SUBDIR=  xtrafiles
-MAKE_ARGS=      PREFIX=${STAGEDIR}${PREFIX}
-
 CONFLICTS=      pcbsd-utils-[0-9]* trueos-server-[0-9]*
-WRKSRC_SUBDIR=	xtrafiles
-MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
+
+WRKSRC_SUBDIR=	package-files
+MAKE_ARGS=	STAGEDIR=${STAGEDIR}
 
 USE_GITHUB=     yes
 GH_ACCOUNT=     trueos
-GH_PROJECT=     trueos-core
+GH_PROJECT=     trueos-desktop
 GH_TAGNAME=     %%GHTAG%%
 
 .include <bsd.port.mk>

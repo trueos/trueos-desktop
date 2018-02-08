@@ -15,22 +15,7 @@ if [ $? -eq 0 ] ; then
    exit 0
 fi
 
-# Copy over customizations for TrueOS
-install -m 644 ${PREFIX}/share/trueos/conf/rc.conf.desktop /etc/rc.conf.trueos
-install -m 644 ${PREFIX}/share/trueos/conf/brand-trueos.4th /boot/brand-trueos.4th
-install -m 755 ${PREFIX}/share/trueos/desktop-defaults/usr/local/etc/init.d/trueosinit /usr/local/etc/init.d/trueosinit
-
-if [ ! -e "${PREFIX}/etc/trueos.conf" ] ; then
-  # Do the first-time setup
-  echo "Doing first-time bootstrap"
-  tar cvf - -C ${PREFIX}/share/trueos/desktop-defaults/ . 2>/dev/null | tar xvpf - -C / 2>/dev/null
-fi
-
-# Copy over some defaults on upgrade
-cp ${PREFIX}/share/trueos/desktop-defaults/etc/devfs.rules /etc/devfs.rules
-
 # Enable the OpenRC services
-
 if [ ! -e "/var/.openrc-migrate-1" ] ; then
   /sbin/rc-update add ipfw boot
   /sbin/rc-update add devd boot
