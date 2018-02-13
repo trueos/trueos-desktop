@@ -3,8 +3,8 @@
 STAGEDIR=$1
 
 #
-cp -R ./usr ${STAGEDIR}/usr
-cp -R ./etc ${STAGEDIR}/etc
+cp -R ./usr ${STAGEDIR}/.
+cp -R ./etc ${STAGEDIR}/.
 
 #Ensure owner of files are all set to root:wheel
 if [ -n "${STAGEDIR}" ] ; then
