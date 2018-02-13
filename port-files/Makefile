@@ -63,7 +63,7 @@ GH_PROJECT=     trueos-desktop
 GH_TAGNAME=     %%GHTAG%%
 
 post-install:
-	${MKDIR} -p ${STAGEDIR}${PREFIX}/share/icons/hicolor/pixmaps
+	${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/hicolor/pixmaps
 	${LN} -s ${PREFIX}/share/pixmaps ${STAGEDIR}${PREFIX}/share/icons/hicolor/pixmaps/apps
 
 .include <bsd.port.mk>

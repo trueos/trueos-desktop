@@ -4,6 +4,7 @@ etc/sudoers.d/trueos-desktop
 share/fluxbox/styles/bora_blue_4k/theme.cfg
 share/icons/default/index.theme
 share/icons/hicolor/256x256/places/start-here-lumina.png
+share/icons/hicolor/pixmaps/apps
 share/wallpapers/FreeBSD/a_1280x1024.jpg
 share/wallpapers/FreeBSD/a_1600x900.jpg
 share/wallpapers/FreeBSD/b_1280x1024.jpg
@@ -49,7 +50,6 @@ share/wallpapers/TrueOS/trueos-current-underconstruction-4k.png
 share/wallpapers/TrueOS/TrueOS_17-12_4K_grey.jpg
 share/wallpapers/TrueOS/TrueOS_17-12_4K_purple.jpg
 share/wallpapers/trueos-default.jpg
-@dir share/icons/hicolor/pixmaps/apps
 @sample etc/trueos.conf.dist etc/trueos.conf
 @sample /etc/crontab.trueos /etc/crontab
 @sample /etc/devfs.rules.trueos /etc/devfs.rules

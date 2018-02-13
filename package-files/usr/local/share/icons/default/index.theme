@@ -1,2 +1,4 @@
-[icon theme]
-inherits=whiteglass
+[Icon Theme]
+Name=Default
+Comment=Default Cursor Theme
+Inherits=whiteglass
