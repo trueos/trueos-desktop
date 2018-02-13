@@ -5,6 +5,12 @@ share/fluxbox/styles/bora_blue_4k/theme.cfg
 share/icons/default/index.theme
 share/icons/hicolor/256x256/places/start-here-lumina.png
 share/icons/hicolor/pixmaps/apps
+share/trueos/xstartup/gpg-agent.sh
+share/trueos/xstartup/enable-inputmethod.sh
+share/trueos/xstartup/fix-gtk-environ.sh
+share/trueos/xstartup/ssh-agent.sh
+share/trueos/xstartup-parallel/load-xresources.sh
+share/trueos/xstartup-parallel/disable-beep.sh
 share/wallpapers/FreeBSD/a_1280x1024.jpg
 share/wallpapers/FreeBSD/a_1600x900.jpg
 share/wallpapers/FreeBSD/b_1280x1024.jpg
@@ -50,6 +56,7 @@ share/wallpapers/TrueOS/trueos-current-underconstruction-4k.png
 share/wallpapers/TrueOS/TrueOS_17-12_4K_grey.jpg
 share/wallpapers/TrueOS/TrueOS_17-12_4K_purple.jpg
 share/wallpapers/trueos-default.jpg
+/usr/share/skel/dot.xprofile
 @sample etc/trueos.conf.dist etc/trueos.conf
 @sample /etc/crontab.trueos /etc/crontab
 @sample /etc/devfs.rules.trueos /etc/devfs.rules
