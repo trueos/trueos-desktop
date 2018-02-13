@@ -1,4 +1,3 @@
-/etc/devfs.rules
 etc/init.d/trueosinit
 etc/rc.d/trueosinit
 etc/sudoers.d/trueos-desktop
@@ -50,4 +49,7 @@ share/wallpapers/TrueOS/trueos-current-underconstruction-4k.png
 share/wallpapers/TrueOS/TrueOS_17-12_4K_grey.jpg
 share/wallpapers/TrueOS/TrueOS_17-12_4K_purple.jpg
 share/wallpapers/trueos-default.jpg
-@sample %%ETCDIR%%/trueos.conf.dist
+@dir share/icons/hicolor/pixmaps/apps
+@sample etc/trueos.conf.dist etc/trueos.conf
+@sample /etc/crontab.trueos /etc/crontab
+@sample /etc/devfs.rules.trueos /etc/devfs.rules

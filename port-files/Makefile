@@ -62,4 +62,7 @@ GH_ACCOUNT=     trueos
 GH_PROJECT=     trueos-desktop
 GH_TAGNAME=     %%GHTAG%%
 
+post-install:
+	${LN} -s ${PREFIX}/share/pixmaps ${STAGEDIR}${PREFIX}/share/icons/hicolor/pixmaps/apps
+
 .include <bsd.port.mk>
