@@ -50,7 +50,8 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/PCDMd:x11/pcdm \
 		socat>=0:net/socat \
 		mesa-demos>=0:graphics/mesa-demos \
 		dhcpcd>=0:net/dhcpcd \
-		bsdstats>=0:sysutils/bsdstats
+		bsdstats>=0:sysutils/bsdstats \
+		xdg-user-dirs>=0:devel/xdg-user-dirs
 
 CONFLICTS=      pcbsd-utils-[0-9]* trueos-server-[0-9]*
 
