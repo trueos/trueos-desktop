@@ -1,5 +1,7 @@
-# trueos-desktop
+# Automation tests for ***trueos-desktop*** ISOs
+The package files and other information for the "trueos-desktop" *package* is located in the "trueos/trueos-core" repository.
 
+---
 **Project Information: Table of Contents**
 
 - [General TrueOS Information](#gentrosinfo)
